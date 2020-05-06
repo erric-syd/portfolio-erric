@@ -2,6 +2,7 @@
 My 1st website
 
 ### Improvement
+#### v1
 Background nya mesti langsung ke load biar lebih bagus impression nya. - Robin C
 
 ### Assets
