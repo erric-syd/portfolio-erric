@@ -1,3 +1,9 @@
+html,
+body {
+    width : 100%;
+    height: 100%;
+}
+
 body {
     display: none;
     margin : 0;
@@ -7,6 +13,7 @@ body {
 ul {
     padding-left: 10px;
 }
+
 
 .bg {
     background               : url("Assets/bg-compressed.jpg");
@@ -50,7 +57,7 @@ ul {
 .modal-title,
 .col-contact,
 .btn {
-    font-family: 'Averia Serif Libre', cursive;
+    font-family: 'Lora', serif;
 }
 
 .row-job,
@@ -107,18 +114,6 @@ ul {
     line-height : 1.7;
     padding-left: 20px;
     padding-top : 3px;
-    font-size   : 2vh;
-}
-
-.copyright {
-    bottom      : 15px;
-    position    : absolute;
-    margin-left : auto;
-    margin-right: auto;
-    left        : 0;
-    right       : 0;
-    text-align  : center;
-    font-size   : 1.5vh;
 }
 
 .contact-logo {
@@ -128,8 +123,9 @@ ul {
     margin-top  : 5px;
 }
 
-.btn {
-    font-size: 2.5vh;
+.copyright {
+    line-height   : 1.2;
+    padding-bottom: 7px;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -173,6 +169,10 @@ ul {
     .col-contact {
         font-size: 15px;
     }
+
+    .copyright {
+        font-size: 11px;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -212,6 +212,34 @@ ul {
         width : 100px;
         height: 100px;
     }
+
+    .col-contact {
+        font-size: 18px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) and (orientation:landscape) {
+    .container {
+        padding-top       : 10vh;
+        padding-bottom    : 5vh;
+        grid-template-rows: 57px 85px 75px 75px 115px;
+    }
+
+    .btn {
+        font-size: 25px;
+    }
+
+    .col-contact {
+        font-size: 18px;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -226,7 +254,7 @@ ul {
             ". my-exp ."
             ". my-skills ."
             ". my-contact .";
-        grid-template-rows   : 85px 85px 85px 85px 150px;
+        grid-template-rows   : 85px 120px 100px 100px 150px;
         grid-template-columns: 25% 50% 25%;
     }
 
@@ -251,12 +279,38 @@ ul {
         width : 125px;
         height: 125px;
     }
+
+    .btn {
+        font-size: 35px;
+    }
+
+    .col-contact {
+        font-size: 20px;
+    }
+
+    .copyright {
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) and (orientation:landscape) {
+    .btn {
+        font-size: 30px;
+    }
+
+    .col-contact {
+        font-size: 18px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .container {
-        padding-top   : 18vh;
+        padding-top   : 15vh;
         padding-bottom: 3vh;
         grid-template-areas:
             "my-name my-name my-name"
@@ -265,7 +319,7 @@ ul {
             ". my-exp ."
             ". my-skills ."
             ". my-contact .";
-        grid-template-rows   : 85px 85px 85px 85px 150px;
+        grid-template-rows   : 85px 100px 105px 105px 150px;
         grid-template-columns: 25% 50% 25%;
     }
 
@@ -289,6 +343,38 @@ ul {
     .joblogo {
         width : 125px;
         height: 125px;
+    }
+
+    .btn {
+        font-size: 38px;
+    }
+
+    .col-contact {
+        font-size: 21px;
+    }
+
+    .copyright {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) and (orientation:landscape) {
+    .container {
+        padding-top       : 10vh;
+        padding-bottom    : 3vh;
+        grid-template-rows: 85px 95px 100px 100px 150px;
+    }
+
+    .btn {
+        font-size: 38px;
+    }
+
+    .col-contact {
+        font-size: 18px;
+    }
+
+    .copyright {
+        font-size: 12px;
     }
 }
 
@@ -331,7 +417,27 @@ ul {
     }
 
     .btn {
-        font-size: 3vh;
+        font-size: 38px;
+    }
+}
+
+@media (min-width: 1200px) and (orientation:landscape) {
+    .container {
+        padding-top       : 10vh;
+        padding-bottom    : 3vh;
+        grid-template-rows: 85px 120px 100px 100px 162px;
+    }
+
+    .btn {
+        font-size: 38px;
+    }
+
+    .col-contact {
+        font-size: 18px;
+    }
+
+    .copyright {
+        font-size: 14px;
     }
 }
 
