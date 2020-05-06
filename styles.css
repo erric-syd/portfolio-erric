@@ -1,0 +1,386 @@
+body {
+    display: none;
+    margin : 0;
+    padding: 0;
+}
+
+ul {
+    padding-left: 10px;
+}
+
+.bg {
+    background               : url("Assets/bg-compressed.jpg");
+    background-repeat        : repeat-x;
+    background-size          : cover;
+    width                    : 100vw;
+    height                   : 100vh;
+    position                 : fixed;
+    animation-name           : bg-animation;
+    animation-duration       : 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.modal-header {
+    padding-bottom: 5px;
+    padding-top   : 5px;
+}
+
+.row-name {
+    font-family: "montserrat";
+    color      : #fbfbfb;
+    text-shadow: 0 0 1px #212121, 0 0 1px #212121, 0 0 1px #212121, 0 0 1px #212121;
+}
+
+.row-job,
+.modal-title,
+.col-contact,
+.btn {
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+.row-job,
+.modal-title {
+
+    font-weight: 100;
+}
+
+.row-job {
+    color      : #fbfbfb;
+    text-shadow: 0 0 1px #212121, 0 0 1px #212121, 0 0 1px #212121, 0 0 1px #212121;
+}
+
+.modal-title,
+.col-contact,
+.btn {
+    color: #212121;
+}
+
+.modal-body {
+    font-family: 'Muli', sans-serif;
+    color      : #212121;
+}
+
+.modal-body-exp-container {
+    gap: 2%;
+}
+
+.modal-body-snt-container {
+    grid-template-areas:
+        "mbsc-skills"
+        "mbsc-skillsdesc"
+        " . "
+        "mbsc-tools"
+        "mbsc-toolsdesc";
+    grid-template-rows: 32px 160px 12px 32px;
+    font-weight       : 600;
+}
+
+.mbsc-logo {
+    width : 75px;
+    height: 75px;
+}
+
+.row-contact {
+    background   : #fbfbfb;
+    opacity      : 0.8;
+    margin-left  : 0px;
+    margin-right : 0px;
+    border-radius: 5px;
+}
+
+.col-contact {
+    line-height : 1.7;
+    padding-left: 20px;
+    padding-top : 3px;
+    font-size   : 2vh;
+}
+
+.copyright {
+    bottom      : 15px;
+    position    : absolute;
+    margin-left : auto;
+    margin-right: auto;
+    left        : 0;
+    right       : 0;
+    text-align  : center;
+    font-size   : 1.5vh;
+}
+
+.contact-logo {
+    width       : 30px;
+    height      : 30px;
+    margin-right: 10px;
+    margin-top  : 5px;
+}
+
+.btn {
+    font-size: 2.5vh;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .container {
+        padding-top   : 6vh;
+        padding-bottom: 1vh;
+        grid-template-areas:
+            "my-name my-name my-name"
+            "my-job my-job my-job"
+            ". my-about ."
+            ". my-exp ."
+            ". my-skills ."
+            "my-contact my-contact my-contact";
+        grid-template-rows   : 55px 70px 55px 55px 76px;
+        grid-template-columns: 22% 56% 22%;
+    }
+
+    .row-name {
+        font-size  : 37px;
+        font-weight: 700;
+    }
+
+    .row-job {
+        font-size: 27px;
+    }
+
+    .modal-title {
+        font-size: 25px;
+    }
+
+    .modal-body {
+        font-size: 15px;
+    }
+
+    .joblogo {
+        width : 80px;
+        height: 80px;
+    }
+
+    .col-contact {
+        font-size: 15px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container {
+        padding-top   : 10vh;
+        padding-bottom: 1vh;
+        grid-template-areas:
+            "my-name my-name my-name"
+            "my-job my-job my-job"
+            ". my-about ."
+            ". my-exp ."
+            ". my-skills ."
+            "my-contact my-contact my-contact";
+        grid-template-rows   : 57px 85px 57px 57px 115px;
+        grid-template-columns: 25% 50% 25%;
+    }
+
+    .row-name {
+        font-size  : 45px;
+        font-weight: 700;
+    }
+
+    .row-job {
+        font-size: 33px;
+    }
+
+    .modal-title {
+        font-size: 31px;
+    }
+
+    .modal-body {
+        font-size: 18px;
+    }
+
+    .joblogo {
+        width : 100px;
+        height: 100px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+        padding-top   : 18vh;
+        padding-bottom: 3vh;
+        grid-template-areas:
+            "my-name my-name my-name"
+            "my-job my-job my-job"
+            ". my-about ."
+            ". my-exp ."
+            ". my-skills ."
+            ". my-contact .";
+        grid-template-rows   : 85px 85px 85px 85px 150px;
+        grid-template-columns: 25% 50% 25%;
+    }
+
+    .row-name {
+        font-size  : 58px;
+        font-weight: 700;
+    }
+
+    .row-job {
+        font-size: 41px;
+    }
+
+    .modal-title {
+        font-size: 33px;
+    }
+
+    .modal-body {
+        font-size: 21px;
+    }
+
+    .joblogo {
+        width : 125px;
+        height: 125px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .container {
+        padding-top   : 18vh;
+        padding-bottom: 3vh;
+        grid-template-areas:
+            "my-name my-name my-name"
+            "my-job my-job my-job"
+            ". my-about ."
+            ". my-exp ."
+            ". my-skills ."
+            ". my-contact .";
+        grid-template-rows   : 85px 85px 85px 85px 150px;
+        grid-template-columns: 25% 50% 25%;
+    }
+
+    .row-name {
+        font-size  : 58px;
+        font-weight: 700;
+    }
+
+    .row-job {
+        font-size: 41px;
+    }
+
+    .modal-title {
+        font-size: 33px;
+    }
+
+    .modal-body {
+        font-size: 21px;
+    }
+
+    .joblogo {
+        width : 125px;
+        height: 125px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        padding-top   : 7vh;
+        padding-bottom: 1vh;
+        grid-template-areas:
+            "my-name my-name my-name"
+            "my-job my-job my-job"
+            ". my-about ."
+            ". my-exp ."
+            ". my-skills ."
+            ". my-contact .";
+        grid-template-rows   : 90px 110px 90px 90px 120px;
+        grid-template-columns: 32% 36% 32%;
+    }
+
+    .row-name {
+        font-size  : 65px;
+        font-weight: 700;
+    }
+
+    .row-job {
+        font-size: 45px;
+    }
+
+    .modal-title {
+        font-size: 32px;
+    }
+
+    .modal-body {
+        font-size: 21px;
+    }
+
+    .joblogo {
+        width : 125px;
+        height: 125px;
+    }
+
+    .btn {
+        font-size: 3vh;
+    }
+}
+
+
+/* Grid Area */
+.container,
+.modal-body-exp-container,
+.modal-body-snt-container {
+    display: grid;
+}
+
+.row-name {
+    grid-area: my-name;
+}
+
+.row-job {
+    grid-area: my-job;
+}
+
+.row-about {
+    grid-area: my-about;
+}
+
+.row-exp {
+    grid-area: my-exp;
+}
+
+.row-skills {
+    grid-area: my-skills;
+}
+
+.row-contact {
+    grid-area: my-contact;
+}
+
+.row-mbsc-skills {
+    grid-area: mbsc-skills;
+}
+
+.row-mbsc-skillsdesc {
+    grid-area: mbsc-skillsdesc;
+}
+
+.row-mbsc-tools {
+    grid-area: mbsc-tools;
+}
+
+.row-mbsc-toolsdesc {
+    grid-area: mbsc-toolsdesc;
+}
+
+/* Grid Area */
